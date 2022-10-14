@@ -9,22 +9,16 @@ export function App() {
   return (
     <div className={s.main_container}>
       <div className={`row ${s.header}`}>
-        <div className={`col-6`}>
-          <Logo title="Expense tracker" />
+        <div className={`col-3`}>
+          <Logo title="ISpent" subtitle="Track your expenses !" />
         </div>
-        <div className={`col-6`}>
-          <IncomeInput />
-        </div>
+        <div className={`col-9 ${s.income_input}`}>Income input</div>
       </div>
       <div className={`row ${s.workspace}`}>
-        <div className={`col-12  ${s.expense_input}`}>
-          <ExpenseInput />
-        </div>
-        <div className={`col-11 col-md-5 ${s.expense_list}`}>
-          <ExpenseList />
-          <div className={`col-12 ${s.expense_total}`}>
-            <ExpenseTotal />
-          </div>
+        <div className={`col-12  ${s.expense_input}`}>Expense input</div>
+        <div className={`col-11 col-md-6 col-lg-4 ${s.expense_list}`}>
+          Expense List
+          <div className={`col-12 ${s.expense_total}`}>Expense Total</div>
         </div>
       </div>
     </div>

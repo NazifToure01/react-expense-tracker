@@ -15,6 +15,11 @@
   align-items: center;
 }
 
+.income_input {
+  justify-content: flex-end;
+  display: flex;
+}
+
 .workspace {
   flex: 5;
   height: 100%;
@@ -23,7 +28,9 @@
 
 .expense_input {
   flex: 1;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .expense_list {
   flex: 8;
