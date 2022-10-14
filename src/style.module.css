@@ -1,0 +1,51 @@
+.main_container {
+  background-color: black;
+  color: white;
+  font-family: Roboto;
+  background: url(assets/images/background.png) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  flex: 1;
+  background-color: blue;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  text-align: center;
+  background-color: red;
+}
+
+.income {
+  text-align: center;
+  background-color: green;
+}
+
+.workspace {
+  flex: 5;
+  background-color: purple;
+  height: 100%;
+  flex-direction: column;
+}
+
+.form {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: greenyellow;
+}
+
+.expense_history {
+  flex: 10;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: chocolate;
+}
