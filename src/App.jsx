@@ -1,14 +1,31 @@
 import s from "./style.module.css";
+import { Logo } from "./components/Logo/Logo";
+import { ExpenseInput } from "./components/ExpenseInput/ExpenseInput";
+import { IncomeInput } from "./components/IncomeInput/IncomeInput";
+import { ExpenseList } from "./components/ExpenseList/ExpenseList";
+import { ExpenseTotal } from "./components/ExpenseTotal/ExpenseTotal";
+
 export function App() {
   return (
     <div className={s.main_container}>
       <div className={`row ${s.header}`}>
-        <div className={`col-2  ${s.logo}`}>Logo</div>
-        <div className={`col-md-4 col-sm-12 ${s.income}`}>Income</div>
+        <div className={`col-6`}>
+          <Logo title="Expense tracker" />
+        </div>
+        <div className={`col-6`}>
+          <IncomeInput />
+        </div>
       </div>
       <div className={`row ${s.workspace}`}>
-        <div className={`col-12  ${s.form}`}>form</div>
-        <div className={`col-12 ${s.expense_history}`}>Expense History</div>
+        <div className={`col-12  ${s.expense_input}`}>
+          <ExpenseInput />
+        </div>
+        <div className={`col-11 col-md-5 ${s.expense_list}`}>
+          <ExpenseList />
+          <div className={`col-12 ${s.expense_total}`}>
+            <ExpenseTotal />
+          </div>
+        </div>
       </div>
     </div>
   );

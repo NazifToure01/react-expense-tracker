@@ -1,0 +1,26 @@
+import s from "./style.module.css";
+
+export function ExpenseInput(props) {
+  return (
+    <form>
+      <div className="row justify-content-center">
+        <div className="col-12 col-sm-5 col-md-2 col-lg-2 mb-2">
+          <input
+            type="text"
+            className="form-control"
+            placeholder='Ex : "Apple"'
+          />
+        </div>
+        <div className="col-12 col-sm-2 col-md-2 col-lg-1 mb-2">
+          <input type="text" className="form-control" placeholder="Ex: 3.99" />
+        </div>
+
+        <div className="col-12 col-sm-2 col-md-2 col-lg-1 mb-2">
+          <button type="submit" className={`btn btn-primary ${s.btn}`}>
+            Add
+          </button>
+        </div>
+      </div>
+    </form>
+  );
+}
