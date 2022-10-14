@@ -4,7 +4,7 @@ import s from "./style.module.css";
 export function ExpenseList(props) {
   return (
     <div style={{ overflowY: "scroll", height: "40%" }}>
-      <table class="table table-hover table-borderless">
+      <table className="table table-hover table-borderless">
         <tbody>
           <ExpenseListItem />
           <ExpenseListItem />
