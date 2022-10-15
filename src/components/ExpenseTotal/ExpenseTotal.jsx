@@ -5,11 +5,11 @@ export function ExpenseTotal(props) {
     <div>
       <div className="row">
         <div className={`col ${s.label}`}>Total expenses</div>
-        <div className={`col ${s.amount}`}>1500$</div>
+        <div className={`col ${s.amount}`}>Fake price $</div>
       </div>
       <div className="row">
         <div className={`col ${s.label}`}>Remaining money</div>
-        <div className={`col ${s.amount}`}>250$</div>
+        <div className={`col ${s.amount}`}>Fake price $</div>
       </div>
     </div>
   );

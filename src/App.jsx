@@ -1,9 +1,9 @@
-import s from "./style.module.css";
-import { Logo } from "./components/Logo/Logo";
 import { ExpenseInput } from "./components/ExpenseInput/ExpenseInput";
-import { IncomeInput } from "./components/IncomeInput/IncomeInput";
-import { ExpenseList } from "./components/ExpenseList/ExpenseList";
 import { ExpenseTotal } from "./components/ExpenseTotal/ExpenseTotal";
+import { IncomeInput } from "./components/IncomeInput/IncomeInput";
+import { List } from "./components/List/List";
+import { Logo } from "./components/Logo/Logo";
+import s from "./style.module.css";
 
 export function App() {
   return (
@@ -21,7 +21,7 @@ export function App() {
           <ExpenseInput />
         </div>
         <div className={`col-11 col-md-6 col-lg-4 ${s.expense_list}`}>
-          <ExpenseList />
+          <List />
           <div className={`col-12 ${s.expense_total}`}>
             <ExpenseTotal />
           </div>
