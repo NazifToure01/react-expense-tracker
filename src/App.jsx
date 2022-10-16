@@ -16,7 +16,7 @@ export function App() {
           Expense Input
         </div>
         <div className={`col-11 col-md-6 col-lg-4 ${s.expense_list}`}>
-          List
+          Expense History
           <div className={`col-12 ${s.expense_total}`}>
             ExpenseTotal
           </div>
