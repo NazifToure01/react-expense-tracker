@@ -1,6 +1,6 @@
 import { ListItem } from "../ListItem/ListItem";
 
-export function List({ items }) {
+export function List({ item }) {
   return (
     <div style={{ overflowY: "scroll", height: "40%" }}>
       <table className="table table-hover table-borderless">

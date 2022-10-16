@@ -1,5 +1,4 @@
 import s from "./style.module.css";
-
 export function App() {
   return (
     <div className={s.main_container}>
@@ -8,7 +7,7 @@ export function App() {
           Logo
         </div>
         <div className={`col-9 ${s.income_input}`}>
-         Income input
+          Income input
         </div>
       </div>
       <div className={`row ${s.workspace}`}>
@@ -16,9 +15,9 @@ export function App() {
           Expense Input
         </div>
         <div className={`col-11 col-md-6 col-lg-4 ${s.expense_list}`}>
-         Expense History
+          List
           <div className={`col-12 ${s.expense_total}`}>
-           Expense totals
+            ExpenseTotal
           </div>
         </div>
       </div>
